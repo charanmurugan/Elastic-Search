@@ -104,6 +104,7 @@ This is typically done with the `@Document` annotation
 Spring Data Elasticsearch provides a ElasticsearchRepository interface that you can extend.
   
     #### Example of the Repository Interface:
+
        ```
     import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
     import org.springframework.stereotype.Repository;
@@ -111,5 +112,5 @@ Spring Data Elasticsearch provides a ElasticsearchRepository interface that you 
     @Repository
     public interface UserRepository extends ElasticsearchRepository<User, String> {
                 // Custom query methods can be defined here, if needed
-    }
+    }    
     ```
