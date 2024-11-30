@@ -99,18 +99,18 @@ This is typically done with the `@Document` annotation
     
     }
     ```
-    ## Step 3 : Create a Repository Interface
-  *  Now, you’ll need to create a repository interface to interact with Elasticsearch.
+  ## Step 3 : Create a Repository Interface
+    *  Now, you’ll need to create a repository interface to interact with Elasticsearch.
 Spring Data Elasticsearch provides a ElasticsearchRepository interface that you can extend.
   
-    #### Example of the Repository Interface:
+       #### Example of the Repository Interface:
 
        ```
-    import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
-    import org.springframework.stereotype.Repository;
+       import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
+       import org.springframework.stereotype.Repository;
 
-    @Repository
-    public interface UserRepository extends ElasticsearchRepository<User, String> {
-                // Custom query methods can be defined here, if needed
-    }    
-    ```
+        @Repository
+        public interface UserRepository extends ElasticsearchRepository<User, String> {
+        // Custom query methods can be defined here, if needed
+        }
+       ```
